@@ -10,7 +10,7 @@ API_KEY = os.getenv("API_KEY")
 AUTHORIZATION = os.getenv("AUTH")
 
 natural_lang_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
-sheety_endpoint = "https://api.sheety.co/651b7aa61c85102e5620785bbfa7026f/workoutSheets/workouts/"
+sheety_endpoint = os.getenv("SHEETY")
 
 natural_lang_headers = {
     "x-app-id": APP_ID,
